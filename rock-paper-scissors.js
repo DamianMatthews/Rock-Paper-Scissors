@@ -85,7 +85,13 @@ function game () {
         console.log(cpu);
         console.log(round);
     }    
-    console.log(`${player1} and ${cpu}`)
+    if (player1 > cpu) {
+        console.log(`You won ${player1} games! CPU won ${cpu}`)
+    } else if (cpu > player1) {
+        console.log(`You won ${player1} games! CPU won ${cpu}`)
+    } else {
+        console.log(`Tie, you won ${player1} games and the CPU won ${cpu} games as well!`)
+    }
 }
 
 game();
