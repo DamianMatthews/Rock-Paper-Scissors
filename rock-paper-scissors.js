@@ -71,7 +71,7 @@ function playRound (playerSelection, computerSelection) {
 function game () {
     let player1 = 0;
         let cpu = 0;
-    for (let i = 1; i<6; i++) {
+    while (player1 < 5 && cpu < 5) {
         let round = playRound(playerSelection(),computerSelection());
         if ( round === 'You win, rock beats scissors' || round === 'You win, paper beats rock' || round === 'You win, scissors beats paper') {
             player1 = player1 + 1;
