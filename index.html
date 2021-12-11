@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="rock-paper-scissors.js" defer></script>
 </head>
 <body>
-    <script src="rock-paper-scissors.js"></script>
+    <div class="top">
+        <div class="score"></div>
+        <button class="startGame">Reset Game</button>
+    </div>
+    <div id="upperMiddle"></div>
+    <div class="middle">
+        <div id="left">PLAYER1
+            <button id="player1">0</button>
+        </div>
+        <div id="vs">VS</div>
+        <div id="right">CPU
+            <button id="cpu">0</button>
+        </div>
+    </div>
+    <div id="lowerMiddle">
+        <div id="left">SCORE
+            <button id="win">0</button>
+        </div>
+        <div id="right">SCORE
+            <button id="lose">0</button>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="buttons">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+    </div>
 </body>
 </html>
